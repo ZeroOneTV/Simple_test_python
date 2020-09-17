@@ -1,5 +1,7 @@
 # The Holes counter problem (solved)
 
+About the problem, here is the description : https://github.com/HomeRefill/come-to-homerefill/tree/master/tests/holes-problem
+
 For run this files, you need first install some programs.
 
 - [Python](https://www.python.org/downloads/) 3.x.x
