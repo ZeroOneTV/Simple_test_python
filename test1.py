@@ -15,14 +15,15 @@ def verify_words(char):
     }.get(char, 0)
 
 num_cases = int(input("Total of cases that you want test: "));
-if ((num_cases >= 40) or (num_cases <= 0)):
+if ((num_cases >= 40) or (num_cases < 0)):
     print("You dont enter with valid number of cases");    
 else:
     total_entry= []
     i=0;
     while i < num_cases:
         entry = input()
-        total_entry.append(entry)
+        if(len(entry) < 100 and entry != ''):
+            total_entry.append(entry)
         i+=1;
     for item in total_entry:
         total_holes=0;
