@@ -22,8 +22,9 @@ else:
     print("Input with you word: ");
     while i <= num_cases:
         entry = input();
-        cases = 0;
-        for char in entry:
-             cases += verify_words(char);   
+        if(len(entry) < 100 and entry != ''):
+            cases = 0;
+            for char in entry:
+                 cases += verify_words(char);   
         print(entry + ' ' , cases);
         i +=1;
